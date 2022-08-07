@@ -9,4 +9,4 @@ doc = BeautifulSoup(result.text, "html.parser")
 prices = doc.find_all(text="$")
 parent = prices[0].parent # Estrutura de HTML
 strong = parent.find("strong")
-print(strong.string)
+print(strong.string) # Printa a variavel
